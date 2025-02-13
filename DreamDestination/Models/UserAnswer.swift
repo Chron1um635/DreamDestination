@@ -49,7 +49,7 @@ let suitableCountries = UserAnswer.findSuitableCountries(for: userAnswer, from: 
 // Выводим результат
 
 //if suitableCountries.isEmpty {
-//   print("Подходящих стран не найдено.")
+//  print("Подходящих стран не найдено.")
 //} else {
 //   print("Подходящие страны:")
 //   for country in suitableCountries {

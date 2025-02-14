@@ -7,17 +7,18 @@
 
 import UIKit
 
-class DestinationCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+final class DestinationCell: UITableViewCell {
+    
+    @IBOutlet var destinationNameLabel: UILabel!
+    @IBOutlet var destinationPriceLabel: UILabel!
+    @IBOutlet var destinationDurationLabel: UILabel!
+    
+    @IBOutlet var destinationImageView: UIImageView!
+    
+    func configure(with country: Country) {
+        destinationNameLabel.text = country.name
+        destinationImageView.image = UIImage(named: country.image)
+        destinationPriceLabel.text = "Стоимость за день: \(country.dailyBudget)"
+        destinationDurationLabel.text = "Длительность: \(country.duration)"
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
 }

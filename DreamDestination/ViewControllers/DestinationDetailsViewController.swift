@@ -7,23 +7,29 @@
 
 import UIKit
 
-class DestinationDetailsViewController: UIViewController {
+final class DestinationDetailsViewController: UIViewController {
+    
+    @IBOutlet var destinationNameLabel: UILabel!
+    @IBOutlet var destinationDescriptionLabel: UILabel!
+    
+    @IBOutlet var destinationImageView: UIImageView!
+    
+    
+    var country: Country?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        configure()
     }
+
     
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+private extension DestinationDetailsViewController {
+    func configure() {
+        guard let existingCountry = country else { return }
+        destinationNameLabel.text = existingCountry.name
+        destinationImageView.image = UIImage(named: existingCountry.image)
+        destinationDescriptionLabel.text = existingCountry.description
     }
-    */
-
 }

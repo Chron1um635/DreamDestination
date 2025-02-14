@@ -73,10 +73,10 @@ struct Country {
     }
 }
 
-enum Climate: String {
-   case hot = "Жаркий"
-   case temperate = "Умеренный"
-   case cold = "Холодный"
+enum Climate: Int {
+   case hot
+   case temperate
+   case cold
 }
 
 enum VacationType: String {

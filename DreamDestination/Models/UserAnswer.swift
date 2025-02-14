@@ -11,7 +11,7 @@ struct UserAnswer {
     let budget: Double
     let vacationDays: Int
     let preferredClimate: Climate
-    let preferredVacationType: VacationType
+    let preferredVacationType: [VacationType]
     
     // Функция для фильтрации стран по критериям
     
@@ -25,7 +25,10 @@ struct UserAnswer {
             guard country.climate == answer.preferredClimate else { return false }
             
             // Фильтрация по типу отдыха
-            guard country.vacationTypes.contains(answer.preferredVacationType) else { return false }
+            //  guard country.vacationTypes.contains(answer.preferredVacationType) else { return false }
+            let countrySet = Set(country.vacationTypes)
+            let answerSet = Set(answer.preferredVacationType)
+            guard countrySet.isSubset(of: answerSet) else { return false }
             
             // Фильтрация по продолжительности отдыха
             guard country.duration <= answer.vacationDays else { return false }
@@ -33,26 +36,3 @@ struct UserAnswer {
         }
     }
 }
-
-
-
-//Предложение по реализации
-
-let countries = Country.getCountries()
-
-// Инициализируем критерии пользователя из введенных пользователем данных
-let userAnswer = UserAnswer(budget: 200000.00, vacationDays: 14, preferredClimate: .temperate, preferredVacationType: .beach)
-
-// Находим подходящие страны
-let suitableCountries = UserAnswer.findSuitableCountries(for: userAnswer, from: countries)
-
-// Выводим результат
-
-//if suitableCountries.isEmpty {
-//  print("Подходящих стран не найдено.")
-//} else {
-//   print("Подходящие страны:")
-//   for country in suitableCountries {
-//       print("- \(country.description)")
-//   }
-//}

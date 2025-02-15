@@ -25,7 +25,6 @@ struct UserAnswer {
             guard country.climate == answer.preferredClimate else { return false }
             
             // Фильтрация по типу отдыха
-            //  guard country.vacationTypes.contains(answer.preferredVacationType) else { return false }
             let countrySet = Set(country.vacationTypes)
             let answerSet = Set(answer.preferredVacationType)
             guard countrySet.isSubset(of: answerSet) else { return false }

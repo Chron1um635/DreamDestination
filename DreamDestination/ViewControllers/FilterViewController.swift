@@ -61,7 +61,7 @@ final class FilterViewController: UIViewController {
         let userAnswer = UserAnswer(
             budget: Double(budgetTextField.text ?? "0") ?? 0,
             vacationDays: Int(daysSlider.value),
-            preferredClimate: Climate(rawValue: (segmentedControl.selectedSegmentIndex)) ?? Climate.temperate,
+            preferredClimate: Climate.allCases[segmentedControl.selectedSegmentIndex],
             preferredVacationType: preferredVacationType
         )
         suitableCountries = UserAnswer.findSuitableCountries(for: userAnswer, from: countries)

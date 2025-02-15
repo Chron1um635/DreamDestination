@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		229957622D5E478600A42BDE /* DreamDestination.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamDestination.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		229957692D5E478600A42BDE /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
-		2299576C2D5E478600A42BDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Filter-result.storyboard"; sourceTree = "<group>"; };
+		2299576C2D5E478600A42BDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2299576E2D5E478700A42BDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		229957712D5E478700A42BDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		645CB7F22D60066D009DB116 /* ResultTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTableViewController.swift; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				229957702D5E478700A42BDE /* LaunchScreen.storyboard */,
-				2299576B2D5E478600A42BDE /* Filter-result.storyboard */,
+				2299576B2D5E478600A42BDE /* Main.storyboard */,
 			);
 			path = StoryBoards;
 			sourceTree = "<group>";
@@ -186,12 +186,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2299576B2D5E478600A42BDE /* Filter-result.storyboard */ = {
+		2299576B2D5E478600A42BDE /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				2299576C2D5E478600A42BDE /* Base */,
 			);
-			name = "Filter-result.storyboard";
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		229957702D5E478700A42BDE /* LaunchScreen.storyboard */ = {

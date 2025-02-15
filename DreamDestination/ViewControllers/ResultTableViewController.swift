@@ -16,7 +16,7 @@ class ResultTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        suitableCountries[section].name
+        "\(suitableCountries[section].flag)"
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -29,8 +29,8 @@ class ResultTableViewController: UITableViewController {
         let country = suitableCountries[indexPath.section]
         var content = cell.defaultContentConfiguration()
         
-        content.text = "\(country.flag)"
         content.secondaryText = country.description
+        content.text = country.name
         
         cell.contentConfiguration = content
         

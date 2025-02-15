@@ -23,7 +23,7 @@ final class FilterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        addDoneButtonOnKeyboard(textField: budgetTextField)
+        budgetTextField.delegate = self
         daysSlider.minimumValue = 1
         daysSlider.maximumValue = 20
         resultButton.isEnabled = false
@@ -65,7 +65,6 @@ final class FilterViewController: UIViewController {
             preferredVacationType: preferredVacationType
         )
         suitableCountries = UserAnswer.findSuitableCountries(for: userAnswer, from: countries)
-        print(suitableCountries)
     }
     
     private func checkSwitches(){
@@ -96,14 +95,16 @@ final class FilterViewController: UIViewController {
 
 
 extension FilterViewController: UITextFieldDelegate {
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
     }
+
     
-    func addDoneButtonOnKeyboard (textField: UITextField) {
-        let keyboardToolBar = UIToolbar()
-        keyboardToolBar.sizeToFit()
-        textField.inputAccessoryView = keyboardToolBar
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        let keyboardToolbar = UIToolbar()
+        keyboardToolbar.sizeToFit()
+        textField.inputAccessoryView = keyboardToolbar
         
         let doneButton = UIBarButtonItem(
             barButtonSystemItem: .done,
@@ -117,8 +118,7 @@ extension FilterViewController: UITextFieldDelegate {
             action: nil
         )
         
-        keyboardToolBar.items = [flexBarButton, doneButton]
+        keyboardToolbar.items = [flexBarButton, doneButton]
     }
-    
 }
 

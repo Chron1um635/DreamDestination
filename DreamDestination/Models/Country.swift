@@ -73,7 +73,7 @@ struct Country {
     }
 }
 
-enum Climate: String {
+enum Climate: String, CaseIterable {
    case hot = "Жаркий"
    case temperate = "Умеренный"
    case cold = "Холодный"

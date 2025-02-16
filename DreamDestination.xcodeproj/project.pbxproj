@@ -14,6 +14,8 @@
 		222660332D5F5CFC00F7A063 /* DestinationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222660322D5F5CFC00F7A063 /* DestinationDetailsViewController.swift */; };
 		2299576A2D5E478600A42BDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229957692D5E478600A42BDE /* ViewController.swift */; };
 		2299576F2D5E478700A42BDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2299576E2D5E478700A42BDE /* Assets.xcassets */; };
+		645CB85B2D61F4D6009DB116 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645CB85A2D61F4D6009DB116 /* FilterViewController.swift */; };
+		645CB85D2D61F514009DB116 /* ResultTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645CB85C2D61F514009DB116 /* ResultTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		2299576C2D5E478600A42BDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2299576E2D5E478700A42BDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		229957712D5E478700A42BDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		645CB85A2D61F4D6009DB116 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		645CB85C2D61F514009DB116 /* ResultTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -96,6 +100,8 @@
 				229957692D5E478600A42BDE /* ViewController.swift */,
 				2226602D2D5F486D00F7A063 /* DestinationsViewController.swift */,
 				222660322D5F5CFC00F7A063 /* DestinationDetailsViewController.swift */,
+				645CB85A2D61F4D6009DB116 /* FilterViewController.swift */,
+				645CB85C2D61F514009DB116 /* ResultTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -194,6 +200,8 @@
 			files = (
 				222660332D5F5CFC00F7A063 /* DestinationDetailsViewController.swift in Sources */,
 				2226602E2D5F486D00F7A063 /* DestinationsViewController.swift in Sources */,
+				645CB85D2D61F514009DB116 /* ResultTableViewController.swift in Sources */,
+				645CB85B2D61F4D6009DB116 /* FilterViewController.swift in Sources */,
 				2299576A2D5E478600A42BDE /* ViewController.swift in Sources */,
 				222660312D5F4A7100F7A063 /* DestinationCell.swift in Sources */,
 			);

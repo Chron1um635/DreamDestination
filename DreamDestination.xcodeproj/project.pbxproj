@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2224D2F82D620032006F8180 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2224D2F72D620032006F8180 /* InfoViewController.swift */; };
 		222660262D5F445B00F7A063 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229957702D5E478700A42BDE /* LaunchScreen.storyboard */; };
 		222660272D5F445F00F7A063 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2299576B2D5E478600A42BDE /* Main.storyboard */; };
 		2226602E2D5F486D00F7A063 /* DestinationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2226602D2D5F486D00F7A063 /* DestinationsViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2224D2F72D620032006F8180 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		2226602D2D5F486D00F7A063 /* DestinationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationsViewController.swift; sourceTree = "<group>"; };
 		222660302D5F4A7100F7A063 /* DestinationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationCell.swift; sourceTree = "<group>"; };
 		222660322D5F5CFC00F7A063 /* DestinationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationDetailsViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				222660322D5F5CFC00F7A063 /* DestinationDetailsViewController.swift */,
 				645CB85A2D61F4D6009DB116 /* FilterViewController.swift */,
 				645CB85C2D61F514009DB116 /* ResultTableViewController.swift */,
+				2224D2F72D620032006F8180 /* InfoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				222660332D5F5CFC00F7A063 /* DestinationDetailsViewController.swift in Sources */,
+				2224D2F82D620032006F8180 /* InfoViewController.swift in Sources */,
 				2226602E2D5F486D00F7A063 /* DestinationsViewController.swift in Sources */,
 				645CB85D2D61F514009DB116 /* ResultTableViewController.swift in Sources */,
 				645CB85B2D61F4D6009DB116 /* FilterViewController.swift in Sources */,
